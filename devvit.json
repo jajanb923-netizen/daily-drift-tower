@@ -1,1 +1,33 @@
-{"$schema":"https://developers.reddit.com/schema/config-file.v1.json","name":"daily-drift-tower","post":{"dir":"dist/client","entrypoints":{"default":{"entry":"index.html","height":"tall"}}},"server":{"dir":"dist/server","entry":"index.cjs"}}
+{
+  "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
+  "name": "daily-drift-tower",
+  "post": {
+    "dir": "dist/client",
+    "entrypoints": {
+      "default": {
+        "entry": "index.html",
+        "height": "tall"
+      }
+    }
+  },
+  "server": {
+    "dir": "dist/server",
+    "entry": "index.cjs"
+  },
+  "menu": {
+    "items": [
+      {
+        "label": "[daily-drift-tower] New Post",
+        "description": "Create a new Daily Drift post.",
+        "location": "subreddit",
+        "endpoint": "/internal/on/menu/new-post"
+      }
+    ]
+  },
+  "triggers": {
+    "onAppInstall": "/internal/on/app/install"
+  },
+  "dev": {
+    "subreddit": "daily_drift_tower_dev"
+  }
+}

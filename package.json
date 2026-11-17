@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run build:client && npm run build:server",
     "build:client": "vite build",
-    "build:server": "esbuild src/server/index.ts --bundle --platform=node --format=cjs --outfile=dist/server/index.cjs --external:@devvit/web/server",
+    "build:server": "esbuild src/server/index.ts --bundle --platform=node --format=cjs --outfile=dist/server/index.cjs",
     "type-check": "tsc --noEmit && tsc -p tsconfig.server.json --noEmit",
     "dev": "devvit playtest",
     "deploy": "devvit upload",

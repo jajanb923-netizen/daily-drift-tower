@@ -21,12 +21,21 @@ h1 { font-size: 22px; line-height: 1.1; }
 .wind-track { flex: 1; height: 8px; background: rgba(255,255,255,0.15); border-radius: 4px; overflow: hidden; }
 #windFill { height: 100%; width: 0%; background: #48dbfb; border-radius: 4px; transition: width 0.3s; }
 #game { width: 100%; height: auto; border-radius: 12px; background: #0f2027; touch-action: manipulation; cursor: pointer; display: block; }
+#stage { position: relative; }
 #overlay {
-  position: relative;
-  margin-top: -8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  padding: 12px 10px 0;
+  pointer-events: none;
 }
 #overlay .panel {
-  background: rgba(255,255,255,0.08);
+  pointer-events: auto;
+  width: 100%;
+  background: rgba(15, 32, 39, 0.92);
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 12px;
   padding: 14px;

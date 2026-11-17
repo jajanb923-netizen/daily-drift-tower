@@ -9,8 +9,8 @@ import { dailyConfig, todayKey, mulberry32, PALETTES, type DailyConfig } from '.
 // ---------------------------------------------------------------------------
 
 const W = 360;
-const H = 560;
-const GROUND_Y = 520;
+const H = 480;
+const GROUND_Y = 440;
 const BLOCK_H = 24;
 const GAME_SECONDS = 60;
 const STORE_KEY = 'daily-drift-v1';
