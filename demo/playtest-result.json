@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-17",
+  "cfg": {
+    "date": "2026-11-17",
+    "seed": 2082199428,
+    "windBase": 0.7715868022758513,
+    "palette": 1,
+    "speed": 1.1645087615353986
+  },
+  "verdict": {
+    "menuVisible": true,
+    "heightAfterDrops": 6,
+    "timerCountingDown": true,
+    "endScreenAppeared": true,
+    "playAgainWorks": true,
+    "consoleErrors": []
+  }
+}

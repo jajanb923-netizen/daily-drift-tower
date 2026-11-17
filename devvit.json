@@ -1,0 +1,1 @@
+{"$schema":"https://developers.reddit.com/schema/config-file.v1.json","name":"daily-drift-tower","post":{"dir":"dist/client","entrypoints":{"default":{"entry":"index.html","height":"tall"}}},"server":{"dir":"dist/server","entry":"index.cjs"}}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Daily Drift — Tower of the Day</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="title-block">
+          <h1>🌬️ Daily Drift</h1>
+          <p id="dateLabel">Tower of the Day</p>
+        </div>
+        <div class="hud">
+          <div class="hud-item"><span class="hud-label">Time</span><span id="timer">60</span></div>
+          <div class="hud-item"><span class="hud-label">Height</span><span id="height">0</span></div>
+          <div class="hud-item"><span class="hud-label">Best</span><span id="best">0</span></div>
+          <button id="muteBtn" aria-label="Toggle sound">🔊</button>
+        </div>
+      </header>
+      <div id="windBar">
+        <span id="windArrow">→</span>
+        <div class="wind-track"><div id="windFill"></div></div>
+        <span id="windLabel">Wind 0</span>
+      </div>
+      <canvas id="game" width="360" height="560"></canvas>
+      <div id="overlay"></div>
+      <footer>
+        <p>Tap / click / Space to drop a block. Stack as high as you can in 60 seconds — the wind changes every day. 🔥 Streak: <span id="streak">0</span> day(s)</p>
+      </footer>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

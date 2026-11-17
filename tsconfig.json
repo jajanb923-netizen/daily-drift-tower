@@ -1,0 +1,1 @@
+{"compilerOptions":{"customConditions":["browser"],"forceConsistentCasingInFileNames":true,"module":"ESNext","moduleResolution":"bundler","skipLibCheck":true,"strict":true,"target":"ES2022"},"include":["src/client","src/shared","vite.config.ts"]}
